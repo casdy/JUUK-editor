@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body,
+.container,
+.buttons,
+.filters,
+.filter,
+.angles,
+.input,
+.singleEffect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(57, 75, 81);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    background: var(--white);
+}
+
+header .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0px 15px;
+    height: var(--header-height);
+    width: 100%;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+header .brand-title {
+    font-size: 24px;
+    color: var(--primary);
+    line-height: var(--header-height);
+}
+
+header nav {
+    display: flex;
+}
+
+header nav .spa-link {
+    color: var(--primary);
+    line-height: var(--header-height);
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+header nav .spa-link:hover {
+    background-color: lightgrey;
+    border-radius: 20px;
+}
+
+header nav .spa-link:active {
+    color: black;
+    border-radius: 20px;
+}
+
+.container {
+    flex-direction: column;
+    position: absolute;
+    width: 500px;
+    background-color: rgb(116, 113, 113);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 180px;
+}
+
+
+/* Image Container*/
+
+.image {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+img {
+    max-width: 500px;
+    max-height: 260px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* Filters Container */
+
+.filters {
+    flex-direction: column;
+    width: 80%;
+    gap: 15px;
+    margin: 10px;
+}
+
+.filter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    font-size: 22px;
+}
+
+input {
+    cursor: pointer;
+}
+
+output {
+    width: 40px;
+    text-align: end;
+}
+
+
+/* Angles Container */
+
+.angles {
+    list-style: none;
+    gap: 30px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.angles li {
+    background-color: rgb(129, 130, 136);
+    color: rgb(27, 32, 43);
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.angles li:active {
+    transform: scale(0.95);
+}
+
+.angles .up {
+    transform: rotate(90deg);
+}
+
+
+/* Buttons Container */
+
+.buttons {
+    gap: 45px;
+}
+
+.btn {
+    padding: 10px 30px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 3px solid rgb(126, 101, 101);
+    color: black;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: black;
+    color: #e4c561;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.resetBtn {
+    background-color: #e95f1a;
+    color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 4px 4px rgb(22, 20, 20);
+    cursor: pointer;
+}
+
+.resetBtn:active {
+    position: relative;
+    top: 4px;
+    left: 4px;
+    box-shadow: none;
+}
