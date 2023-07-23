@@ -130,3 +130,7 @@ saveBtnEl.addEventListener("click", () => {
 
 // Call the loadEl function at the beginning when the website is opened to set initial values
 loadEl();
+
+// This JavaScript code implements an image editor functionality. 
+// It selects elements from the DOM, handles input changes, image rotations, flips, and saving the edited image. 
+// The code dynamically updates the image preview based on the user's input and provides options to choose and save the edited image.
